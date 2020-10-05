@@ -1,50 +1,114 @@
-<?php require __DIR__ . '/recursos/template/array.php'; ?>
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo - PHP 7</title>
-    <link rel="stylesheet" href="/recursos/css/estilo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="recursos/css/estilo.css">
+    <title>Curso PHP</title>
 </head>
-
 <body>
-    <section id="pagina-principal">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="logo">
-                    <h1>PHP</h1>
+    <header class="cabecalho">
+        <h1>Curso PHP</h1>
+        <h2>Índice dos Exercícios</h2>
+    </header>
+    <main class="principal">
+        <div class="conteudo">
+            <nav class="modulos">
+                <div class="modulo verde">
+                    <h3>Básico</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=ola">
+                                Olá PHP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=html">
+                                Integração HTML
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=css">
+                                Integração CSS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=comentarios">
+                                Comentários PHP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=desafio">
+                                Desafio
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="modulos-cards">
-                <div class="row">
-                    <?php
-                    foreach ($modulos as $key => $value) {
-                    ?>
-                        <div class="col-4">
-                            <div class="cards-custom" style="border: 3px solid <?= $value['cor'] ?>;">
-                                <div class="row">
-                                    <div class="id-card" style="border: 3px solid <?= $value['cor'] ?>;">
-                                        <h1><?= ($key + 1) ?></h1>
-                                    </div>
-                                    <h1 class="titulo-card"><?= $value['titulo'] ?></h1>
-                                </div>
-                                <div class="conteudo">
-                                    <a href="">
-                                        <?= $value['conteudo'] ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    <?php
-                    }
-                    ?>
+                <div class="modulo vermelho">
+                    <h3>Tipos</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=int">
+                                Tipo Inteiro
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=float">
+                                Tipo Float
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=aritmeticas">
+                                Op. Aritméticas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=desafio_precedendia">
+                                Desafio Precedência
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=string">
+                                Tipo String
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=desafio_string">
+                                Desafio String
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=booleano">
+                                Tipo Booleano
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=conversoes">
+                                Conversões
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+                <div class="modulo azul">
+                    <h3>Variáveis</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=variaveis&file=basico">
+                                Variáveis
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=variaveis&file=desafio_equacao">
+                                Desafio Equação
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </section>
+    </main>
+    <footer class="rodape">
+        COD3R & ALUNOS © <?= date('Y'); ?>
+    </footer>
 </body>
-
 </html>
