@@ -13,3 +13,15 @@
 
 var_dump(1 === '1');
 var_dump('sim' === 'sim');
+
+echo "<br>";
+$idade = 60;
+
+if($idade < 18){
+    echo "Menor de idade";
+} else if($idade < 65) {
+    echo "Adulto";
+} else {
+    echo "Terceira Idade";
+}
+
