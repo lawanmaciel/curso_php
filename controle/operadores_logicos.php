@@ -40,7 +40,7 @@ var_dump(false or false);
 echo "<p>Exemplo</p><hr>";
 
 $idade = 62;
-$sexo = 'F';
+$sexo = 'M';
 $b = '<br>';
 
 if($idade >= 60 && $sexo === 'F'){
@@ -48,5 +48,5 @@ if($idade >= 60 && $sexo === 'F'){
 } elseif ($idade >= 65 && $sexo === 'M'){
     echo "Pode se aposentar -> $idade";
 } else {
-    echo 'Vai ter que trabaia caraio';
+    echo 'Vai ter que trabaia mais um pouco ;-;';
 }
